@@ -26,3 +26,48 @@ button.hazardButton:active {
     border-color: #E9E9E9;
     box-shadow: 0 0 3px 1px rgba(50,50,50,0.2);
 }
+
+div.playerWrapper #player {
+    float: left;
+}
+
+div.playerWrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+div.playerWrapper .hazardPoints {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+}
+
+.hazardPoints .hazardPoint {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    height: 20px;
+    width: 21px;
+    background: #F00;
+    margin-left: -11px;
+    border-radius: 10px;
+}
+
+.hazardPoints .hazardPoint:after {
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 1px;
+    border: 10px solid transparent;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-color: #F00;
+    position: absolute;
+    bottom: -19px;
+    left: 5px;
+}

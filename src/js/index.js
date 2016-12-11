@@ -42,7 +42,7 @@ var player;
             var hazardData = {
                 duration: duration,
                 time: time,
-                share: parseInt(duration/time*100)/100
+                share: time/duration
             };
             hazardExpected(hazardData);
         });
